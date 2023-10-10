@@ -27,5 +27,5 @@ jobs:
           git config user.name AilinLuca
           git config user.email ailin.cao@gmail.com
           git add .
-          git commit -m "update config"
+          git commit -m "update config for real"
           git push

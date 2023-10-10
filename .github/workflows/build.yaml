@@ -22,7 +22,7 @@ jobs:
       - name: Update version
         run: |
           sed -i '0,/version:/{s/version:.*/version: 2.0.0/}' ./config.yaml
-       - name: Commit change
+      - name: Commit change
         run: |
           git add .
           git commit -m "update config"

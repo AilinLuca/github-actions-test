@@ -9,7 +9,7 @@ on:
 jobs:
   update_config:
     if: github.ref_type == 'branch'
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: LS Output
         run: ls
@@ -18,8 +18,9 @@ jobs:
         with: 
           name: AilinLuca/config-test
           ref: main
+      - name: LS Output after Checkout
+        run: ls
       - name: Update version
         run: |
           sed -i '0,/version:/{s/version:.*/version: 2.0.0/}' ./config.yaml
-      - name: LS Output after Checkout
-        run: ls
+

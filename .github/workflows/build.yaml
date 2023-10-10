@@ -5,6 +5,8 @@ on:
       - 'main'
     tags:
       - '**'
+permissions:
+  contents: write
 
 jobs:
   update_config:
@@ -17,6 +19,7 @@ jobs:
         uses: actions/checkout@v4
         with: 
           repository: AilinLuca/config-test
+          token: ${{secrets.GITHUB_TOKEN}}
       - name: LS Output after Checkout
         run: ls
       - name: Update version

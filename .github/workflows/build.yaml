@@ -25,7 +25,7 @@ jobs:
       - name: Commit change
         run: |
           git config user.name AilinLuca
-          git config user.email ailin.cao@gmail.com
+          git config user.email 33815456+AilinLuca@users.noreply.github.com
           git add .
           git commit -m "update config for real"
           git push

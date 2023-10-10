@@ -24,8 +24,8 @@ jobs:
           sed -i '0,/version:/{s/version:.*/version: 2.0.0/}' ./config.yaml
       - name: Commit change
         run: |
-          git config user.name AilinLuca
-          git config user.email 33815456+AilinLuca@users.noreply.github.com
+          git config user.name "AilinLuca"
+          git config user.email "33815456+AilinLuca@users.noreply.github.com"
           git add .
           git commit -m "update config for real"
           git push
